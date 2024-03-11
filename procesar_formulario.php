@@ -25,15 +25,15 @@ try {
     $mail->isSMTP();
     $mail->Host        = 'smtp.gmail.com'; // Cambia esto al servidor SMTP que estés usando
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'scirillano@gmail.com'; // Cambia esto a tu dirección de correo electrónico
-    $mail->Password   = 'qrdwxvdwflfvnjvl'; // Cambia esto a tu contraseña
+    $mail->Username   = ''; // Cambia esto a tu dirección de correo electrónico
+    $mail->Password   = ''; // Cambia esto a tu contraseña
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
     // Remitente y destinatario
     $mail->setFrom($email, $name);
     $mail->addAddress('recipient@example.com', 'Recipient Name');
-
+    
     // Contenido del correo
     $mail->isHTML(true);
     $mail->Subject = 'Nuevo mensaje desde el formulario';
